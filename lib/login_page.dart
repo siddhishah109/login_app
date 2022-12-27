@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
@@ -117,7 +118,8 @@ class _LoginPageState extends State<LoginPage> {
                                 style: TextStyle(
                                     color: Color.fromARGB(255, 135, 152, 167),
                                     fontSize: 20,
-                                    fontWeight: FontWeight.bold))
+                                    fontWeight: FontWeight.bold),
+                                recognizer: TapGestureRecognizer())
                           ]))
                     ],
                   ),
